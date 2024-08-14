@@ -1,5 +1,6 @@
 header{
     padding-block: 32px;
+    font: var(--text-md);
 }
 header .container{
     display: flex;
@@ -14,13 +15,16 @@ header .container{
 #profile > div{
     max-width: 384px;
 }
+#profile img{
+    width: 176px;
+    height: 176px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 #profile h1{
     font: var(--text-lg);
     color: var(--text-1);
     margin-bottom: 8px;
-}
-#profile p{
-    font: var(--text-md);
 }
 #info{
     list-style: none;
