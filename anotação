@@ -1,7 +1,7 @@
          Ferramentas de Pesquisas
 -npm    -devdocs
 ------------------------------------------------------------------
-            GIT HUB
+                        GIT HUB
  Comandos para trabalhar com repositório local
 - git init => inicio o git no seu projeto
 - git status => verifica alterações de pastas e arquivos no projeto
@@ -10,7 +10,7 @@
 - git log => historico de commit do projeto
 
 ------------------------------------------------------------------
-            HTML
+                        HTML
  Comentários:
     <-- comentário... -->
 
@@ -19,13 +19,51 @@
 - Podem ser identificadas por atriburos de 'id' ou 'class'
 
 - <br> => quebra de linha              - &nbsp; => espaço
-- <p> => Paragrafo e quebra de linha   - <a> => link
+- <p> => Paragrafo e quebra de linha   - <a href=" "> => link
 - <em> => enfase na palafra entre tag  - <strong> => Negrito
+- <mark> => efeito marca texto         - <s> => efeito riscado
+
 
             Caracteres Reservados
-- &lt; &gt; => < >                     -<code> => Altera fonte
+- &lt; &gt; => < >                     -<code> => Altera fonte para cod
+<pre> => permite que tenha espaço, usado em conjunto do 'code'
 
             Atribitos HTML
  Informações extras / configurações
- 
+            Atributos Booleano
+ Não precisa de conteúdo => hidden 
+            Atributos Globlais
+ Podem ser usados em todos os elementos HTML
+ -id=" " => identificado no css pelo #   - class=" " => itenficado pelo .
+ - data-..=" " => adiciona dados personalizados
+ - style = " " => Altera o css diretamente pelo HTML,
+            
+            Tags Sêmanticas
+   Usado para deixar o código semantico e favorecer o site:
+- <header> => cabeçalho                 -<main> => Conteúdo principal
+- <aside> => conteudo segundario        -<footer> => rodapé
+- <nav> => navegação, contem links.     -<Section> => Definem seções.
+- <article> => Definem um artigo
+            Tags genéricas
+-<div>                                  -<spam>
+
+            Listas
+- <ul> => Lista não ordenada          -<ol> => Lista ordenada
+- <li> => item da lista               -<dl> =>
+- <dt> => 
+
+            Caminhos absolutos e relativos
+ Absoluro => Um caminho que é especificado a partir da raiz do sistema de arquivos
+ Relativo => Um caminho que pe especificado a partir do diretório atual
+
+------------------------------------------------------------------
+                        CSS
+ Cascading Stylesheet / folha de estilo em cascata
+
+ Comentarios:
+   /* comentario */
+
+            Box Model
+ Display:
+-Block => ocupa a linha toda           -inline => um ao lado do outro
 
