@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --brand: #EF5F4C;
+    --background: white;
+    --surface: #f5f5f5;
+    --skeleton: #D9D9D9;
+    --shape: #ffffff8F;
+    --text-1: #313131;
+    --text-2: #6C6C6C;
+}
