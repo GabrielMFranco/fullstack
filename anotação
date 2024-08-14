@@ -8,6 +8,9 @@
 - git add . => adiciona todos os arquivos e pastas modificadas
 - git commit -m "mensagem aqui" => cria e escreve um commit
 - git log => historico de commit do projeto
+- git push=> envia alterações locais para locais remotos
+- git pull => faz as alterações de um repositorio remoto para o seu local
+- git clote => cloca o repositorio remoto para o pc local
 
 ------------------------------------------------------------------
                         HTML
@@ -66,7 +69,64 @@
             Box Model
  Display:
 -Block => ocupa a linha toda           -inline => um ao lado do outro
+-flex => flexbox                       -grid
+            Position
+- relative => relativo a si mesmo
+- absolute => relativo ao containing block proximo ou inicial
+- fixed => fica fixo na tela, se dar scroll ele acompanha no munitor no -          mesmo ponto fixo 
+- sticky => acompanha o scroll sem sair da tela, relativo ao elemeto pai -           que tenha mec de scroll
 
-            
- 
+            Pseudo Classes :
+- :hover => Quando passar o mouse em cima acontece uma interação
+         ex: div:hover{ background-color: green;  }
+- :not => colocar uma função em um elemento que não tem o requisito.
+       ex: div:not(.nao){background-color:blue;} adiciona o background nos
+           elementos que não tem a classe.nao
+- :has => o elemento que tenha o requisito recebe...
+       ex: section:has(div:hover){ Se tiver hover em alguma div, vai recer
+           o que foi fornecido}
+- :root => 
+- :nth-child(n) => pega o elemento 'n' fornecido e aplica o que foi dado
+
+            Pseudo Elements ::
+- ::first-elements => pega todas as primeiras letras do conteúdo
+- ::before / later => Cria elementos antes ou depois do conteudo
+
+            Flexbox
+-Main => eixo principal               -Cross => eixo cruzado/oposto
+
+ flex-direction:
+- row => um ao lado do outro        - collumn => em coluna   
+- reverse => inverte o lado =>row-reverse =>collum-reverse
+
+            Alinhamento e espaçamento
+- justify-content => alinhamento dentro do container  
+      flex-start => gruda no main-start
+      flex-end => gruda no main-end
+      center => centraliza no main
+      space-evenly => espaços constantes
+      space-around => espaço ao redor
+      space-between => espaço entre elementos
+- align-content => apenas com flex wap abilitado
+- align-self => apenas o elemento
+- align-items => alinhamento no eixo cruzado
+      stretch => estica no tamanho do container
+      flex-start => gruda no cross-start
+      flex-end => gruda no cross-end
+      center => centraliza no cross
+      baseline => alinha na linha base do texto
+- gap => espaço entre elementos
+- margin => alinha com base na margin
+
+            Multi linha
+ flex-wrap:
+- wrap => quebra o elemento se não tiver espaço na div
+-nowrap =>
+
+            sizing
+- flex-basic => tamanho do item relativo ao eixo principal
+- flex-grow => crescimento automatico do item conforme espaço vazio
+- flex-shrink => encolhimento automatico do item 
+Shorthand => flex: grow shring basic;
+      
 
