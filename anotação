@@ -1,0 +1,31 @@
+         Ferramentas de Pesquisas
+-npm    -devdocs
+------------------------------------------------------------------
+            GIT HUB
+ Comandos para trabalhar com repositório local
+- git init => inicio o git no seu projeto
+- git status => verifica alterações de pastas e arquivos no projeto
+- git add . => adiciona todos os arquivos e pastas modificadas
+- git commit -m "mensagem aqui" => cria e escreve um commit
+- git log => historico de commit do projeto
+
+------------------------------------------------------------------
+            HTML
+ Comentários:
+    <-- comentário... -->
+
+ Tags:
+- Identificado por < >
+- Podem ser identificadas por atriburos de 'id' ou 'class'
+
+- <br> => quebra de linha              - &nbsp; => espaço
+- <p> => Paragrafo e quebra de linha   - <a> => link
+- <em> => enfase na palafra entre tag  - <strong> => Negrito
+
+            Caracteres Reservados
+- &lt; &gt; => < >                     -<code> => Altera fonte
+
+            Atribitos HTML
+ Informações extras / configurações
+ 
+
