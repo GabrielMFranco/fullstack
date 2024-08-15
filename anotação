@@ -128,5 +128,49 @@
 - flex-grow => crescimento automatico do item conforme espaço vazio
 - flex-shrink => encolhimento automatico do item 
 Shorthand => flex: grow shring basic;
+
+            GRID
+ Colunas e linhas que posicionam o conteudo do site como você preferir
+ Cria linhas conforme a quantia de elemtentos dentro dele
+- Display: inline-grid: => aceita algumas propriedades que o inline não 
+          aceitaria
+  Grid template:
+- columns; => altera o tamanho das colunas, podendo ser dividida em px ou 
+          em fr, que divide em espaços iguais, podemos usar também o repeat( ) ex: repeat(3, 1fr), ele faz 3 elementos dividido em uma frasão, ficando dividido igualmente na tela, se tiver um quarto elemento ele é jogado pra outra linha 
+- rows; =>altera o tamanho das linhas, 
+-areas; => da uma itentificação para as areas e onde ela ocupa, podendo 
+           repetir se ela for abranger mais de uma coluna ou linha. EX:
+           "a b b" 
+           "a b b" // podemos add tamanho por px aqui ex: 50px
+           "a c d" 40px / 80px 1fr 2fr;
+
+           Assim é só colocar a identificação nos itens que ele ocupa o espaço, podemos colocar como as tags também.
+
+ Itens
+-grid-collums: => tem como base as linhas virtuais
+ start => qual coluna ele começa 
+ end => qual coluna ele termina
+-grid-row://
+ Podemos dar espaço entre os elementos com o 'gap', 'row-gap', 'collumn-gap'
+
+ Alinhamento no grind
+- Aplicadas no container:
+ aligh-content => alinha no rixo y, com center, space-bettween ...
+ justify-content => alinha no eixo x
+ place-content => junção do alight e justify
+
+ aligh-items => alinha os itens eixo y , start,end, ...
+ justify-items => alinha os itens no eixo x,
+ place-items => trabalha com os 2, aligh e justify
+
+- Aplicadas no itens?
+ align-self => aplica as mesmas coisas, porem em um unico item.
+ justify-self => 
+ place-selt => 
+
+ Propriedades auto do grid
+- grid-auto-flow => fluxo altomatico para column ou row q é o padrao
+- grid-auto-columns => max-content,...
+
       
 
