@@ -1,0 +1,20 @@
+:root{
+    --brand-color-light: #60A5FA;
+    --brand-color-dark: #1D4ED8;
+    /* BASE  */
+    --bg-color: #0F172A;
+    --stroke-color: #1E293B;
+    /* TEXTOS */
+    --text-color-primary: #F1F5F9;
+    --text-color-secondary: #CBD5E1;   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+}
