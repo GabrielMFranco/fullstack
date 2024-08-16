@@ -9,7 +9,7 @@
     --text-color-secondary: #CBD5E1;   
 
     /* FONTES */
-    --font-family: 'Archivo','sans-serif',arial;
+    --font-family: 'Archivo','sans-serif';
     --h1: 800 24px/135% var(var(--font-family));
     --h2: 800 16px/140% var(var(--font-family));
     --h3: 800 14px/140% var(var(--font-family));
@@ -48,5 +48,6 @@ h1,h2,h3{
 }
 .container{
     max-width: 1280px;
-    padding-left: ;
+    padding-inline: 32px;
+    margin-inline-start: auto;
 }
