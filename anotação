@@ -172,5 +172,46 @@ Shorthand => flex: grow shring basic;
 - grid-auto-flow => fluxo altomatico para column ou row q é o padrao
 - grid-auto-columns => max-content,...
 
-      
+-----------------------------------------------------------------------
+                                    FORMS
+ <form action= "pra onde vai os dados" method="post ou get"> </form>
 
+ <button> => type ="submit => envia dados
+                   "reset" => limpar dados
+                   "button" => inicia uma ação
+- autofocus => faz com que o botão fique selecionado para facilitar
+- disabled => desativa o botão 
+- name => nome do botao
+  value=> valor ao ser utilizado ao enviar o formulario
+
+<input type="text" name="nome"> =>
+- Atributos fundamentais:
+  name => o valor do imput ao enviar o formulario
+  type => define tipo de dado
+- Atributos gerais:
+  value =>
+  autocomplete=>
+  size=> cresce e diminui o tamanho do imput
+  autofocus=> quando abrir o form esse campo vai ficar focado
+  disabled=> desabilitar qual campo quiser
+  readonly=> não deixa autorar o que ta escrito
+  form=> 
+  required=> tem que preencer o campo para deixar enviar
+  placeholder=> texto dentro do texto com dica dq colocar ali
+
+<input type="number"> => aceita apenas números
+                         min/max=>numero minimo e maximo 
+                         step=> pular numero,ex: de 10 em 10
+<input type="email"> => valida um email
+                        multiple => aceita mais de um email, separado por ,
+                        minlength/maxlength=> numero de letras
+                        pattern => verifica as informações ex:
+                              pattern=".+@
+                        title => avisa oq precisa pra validar ex:
+                              title="apenas @gmail.com"
+<input type="password"> => oculta o texto com *
+                           minlength/maxlength =>
+                           pattern => ex: [0-9a-fA-F]{4,8} 
+                           inputmode=> numeric => abre teclado do cel
+
+  
