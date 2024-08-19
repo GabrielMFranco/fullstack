@@ -213,5 +213,44 @@ Shorthand => flex: grow shring basic;
                            minlength/maxlength =>
                            pattern => ex: [0-9a-fA-F]{4,8} 
                            inputmode=> numeric => abre teclado do cel
+                           title=> 
+<input type="file"> => envia um ou mais arq pelo form, o form precida do
+                       atributo enctype="multipart/form-data".
+                       multiple => usa mais de um arquivo
+                       accept => tipo de arquivo que vai ser aceito.ex:
+                        accpt="video/*" aceita todo tipo de video
+                        accpet="audio/mp3" apenas audio, mp3
+<input type="range"> => cria um barra igual de volume
+                        min/max => define o min e max dos numeros
+                        step => quantidade de número que pula
+                        value => o valor que a barra inicia
+<input type="color"> => interface que seleciona cor
+                        value => define a cor inicial (RGB)
+                        datalist => define uma pre definição de cor:
+                        <option value="cor">, colca um id no datalist e menciona ele no list="id"  
+<input type="checkbox"> => seleção de valores
+                           value => como o valor selecionada vai ser enviado ex: value="carro" ai no checkbox adicona o nome do carro
+                           pode ter varios valores
+                           cheched=> começa com algo marcado
+<input type="radio"> => marca apenas um no grupo de opções.
+<input type="hidden"> => sempre trafega informações mas sempre escondidas
+                         value="id" => não aparece pra quem meche no form
+ Sempre usar o caniuse.com para pesquisar os inputs e se atualizar.
+
+<label for="id do imput"> => podemos colocar o input dentro do label pra
+                             não precisar usar o for
+<textarea name="" id="" cols="" rows=""> => mais de uma linha de texto
+                                        minlength/maxlength=>
+<select name="" muitile size="2">
+    <option value="">Selecione</option>
+    <option label="fiat" value="fiat">
+    <option label="audi" value="audi">
+    size=> quantos aparece na tela e acrescenta rolagem se necessario
+    <optgroud> => separa outro grupo dentro dos option
+
+<fielset> => agrupamento de campos
+
+
+
 
   
