@@ -23,6 +23,45 @@
             <p>
                 Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
             </p>
+
+            <form action="" method="post" enctype="miltipart/form-data">
+                <fieldset class="child-info">
+                    <legend>Informações da criança</legend>
+
+                    <div class="input-wrapper">
+                        <label for="fullname">Nome completo</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Qual o nome da criança">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="birth">Data de nascinamento</label>
+                        <input type="date" name="birth" id="birth">
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="gender">Sexo</label>
+                        <select name="gender" id="gender">
+                            <option value="famale">Feminino</option>
+                            <option value="male">Masculino</option>
+                        </select>                    
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Informações médicas</label>
+                        <textarea name="medical-info" id="demical-info" cols="30"
+                        rows="10" placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, explique)" ></textarea>
+                    </div>
+
+                    <div class="dropearea-wrapper">
+                        <input type="file" id="birth-file" name="birth-file">
+                        <img src="assets/icons/cloud-upload.svg" alt="">
+                        <p>
+                            Clique aqui para <br> Selecionar os arquivos
+                        </p>
+                    </div>
+
+                </fieldset>
+            </form>
             </div>
         </main>
 
