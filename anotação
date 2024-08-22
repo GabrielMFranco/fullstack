@@ -249,8 +249,18 @@ Shorthand => flex: grow shring basic;
     <optgroud> => separa outro grupo dentro dos option
 
 <fielset> => agrupamento de campos
+---------------------------------------------------------------------------
+OBS Desafio:
 
+fazendo botoes com radio e label:
+ocultar o input com o 'all: unset' e colocar position absolute, para sobrepor
+    o campo que ele está, e adicionar position relative no campo "pai" para 
+    mostrar qual campo ele vai se basear, em seguida adicionar o 'inset:0',
+    no label basta centralizar e configurar do jeito que precisar.
 
+    
+
+--------------------------------------------------------------------------
 
 
   
