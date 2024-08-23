@@ -260,7 +260,65 @@ fazendo botoes com radio e label:
   - para alterar a cor usar o '&:hover, &:focus' e para mudar quando selecionar
     usar o '&:has(:checked)'
 
-
+62.5
 --------------------------------------------------------------------------
 
           CSS Function
+- transform:
+   movimentação - rotação - tamanho
+   translate(X , Y)=> move no eixo bloco, sendo o primeiro valor no eixo X
+                      e o segundo valor no eixo Y.
+   rotate(40deg) => gira o bloco na quantidade determinada
+   scale(2) => aumenta o tamanho, nesse caso ta dobrando o tamanho
+
+- transform numerica basica:
+   width: calc(20% + 4rem) => vai pegar 20% da pagina mais 4rem, podemos 
+      usar qualquer operação basica no calc
+
+- Comparison:
+   min/max=> heigh: min(90vw) => define uma altura minima, se tiver mais de
+             um valor ele pegar o menor, podemos usar o calc dentro tb.
+   clamp => font-size: clamp(1rem, 7vw, 4rem) => valor min, desejado, max, 
+
+- Filter:
+   blur => filter: blur(10px); => deixa com efeito borrado.
+   brightness => filter: brightness(3) => da brilho
+   contrast => filter: contrast(2) => adiciona contraste aceita positivo e 
+        negativo,
+   drop-shadow => filter: drop-shadow(1rem 1rem 2rem cor)
+   opacity => filter: opacity(0.2)
+   invert => filter: invert() => inverte as cores 
+   hue-rotate => filter: hue-rotate(0deg a 360deg) => gira a palheta de cores
+
+- Color:
+   rgb => red,green,blue => valores de 0 a 255 => rgb(255,40,60)
+   hsl => hue, saturação, brilho => hsl(300,78%, 48%, 50%)
+   color-mix => color-mix(in hsl, hsl(10 100% 50%), hsl(60 100% 50%) ) 
+                mistura as duas cores.
+- dradient:
+   linear-gradient(to right,90deg, red, blue) => faz um degrade das cores
+      na direção que foi pedida, quantos ° de angulação e quais as cores.
+   radial-gradient(red, blue) => faz um degrade em formato radial
+
+- shape:
+   circle => clip-path: circle() => cria um circulo dentro na div, porem 
+      pode cortar o conteudo
+   polygon => clip-path: polygon() => faz um formato requerido, fazer o 
+      formato pelo site https://bennettfeely.com/clippy/ 
+
+- references:
+   var => pega a variavel que foi definica atrazer do 'css :root' e aplica.
+   url => pega uma url e utiliza onde foi pedido. ex: backgroud: url(...);
+   attr() =>
+
+                                    Media Query
+  @import url("screen.css") screen and (orientatio: portrait)
+
+  podemos também adicionar direto no css:
+  @media screen and (min-width: 400px)and(max-width: 600px){
+    ......css
+  }
+- range => (400px < width < 50px) => se a largura estiver entre.
+           (width >=500) => se a largura for maior ou igual a 500
+
+
