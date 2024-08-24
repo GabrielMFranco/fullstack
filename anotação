@@ -322,3 +322,10 @@ fazendo botoes com radio e label:
            (width >=500) => se a largura for maior ou igual a 500
 
 
+-----------------------------------------------------------
+obs:
+para adicionar gradient no texto usar o:
+   -webkit-background-clip:text; 
+   background-clip: text;
+   color:transparent;
+adicionar o texto do botao em uma area-label
