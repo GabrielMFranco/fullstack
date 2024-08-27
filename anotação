@@ -322,10 +322,59 @@ fazendo botoes com radio e label:
            (width >=500) => se a largura for maior ou igual a 500
 
 
------------------------------------------------------------
+--------------------------------------------------------
 obs:
 para adicionar gradient no texto usar o:
    -webkit-background-clip:text; 
    background-clip: text;
    color:transparent;
 adicionar o texto do botao em uma area-label
+--------------------------------------------------------
+
+            CSS Animation & Transition
+animação => começa em um local e termina em outro
+transition => tempo de animação 
+
+transition-property: opacity, transform (propriedade);
+transition-duration: 1s (tempo), 20ms;
+transition-dalay: => atraso para transição acontecer
+
+transition-timing-function: linear (ir e sair)
+                            ease => ease-in(chegada suave), ease-out(saida suave).
+                            cubic-bezier
+                            steps => da paços até o final
+short hand:
+ transition: opacity 400ms ease, transform 1s ....;
+
+- retirar motion se for pedido pelo usuario:
+  @media (prefers-reduced-motion){ div{ transition:none; } }
+
+-Animation:
+   @keyframes nome{
+      from => de onde sai
+      to => onde chega
+   }
+animation-fill-mode: forwards => mantem as popriedades finais
+                     backwards => mantem as propriedades iniciais
+                     both=> puxa as iniciais e mantem as finais
+animation-iteration-count: => quantas vezes faz a ação
+short hand:
+ animation: nome 1s 1s bpth infinite alternate ease;
+
+animarion-timeline:
+  scroll() => trabalha com o scroll da tela
+  view() => trabalha conforme aparece na tela
+animation-range:
+  start: 10px => começa a 10px do deslocamento do fundo
+  end: 50% => termina a 50% do deslocamento do fundo 
+  contain => começa quando o final do elemento entrar na vp
+  cover => começa quando o elemento entra na vp
+  entry => começa quando entra e termina quando passa o final do elemento
+  exit => inicia quando começa a sair da tela
+
+  transition: background-color 0.5s;
+  Aplica diversas transformações visuais a um elemento, como rotação, translação e dimensionamento.
+  transition-duration: 0.5s;
+
+
+
