@@ -4,7 +4,6 @@
     overflow: hidden;
 
     .scroller{
-        border: solid;
         width: 100%;
         overflow: hidden;
         padding-block: 1rem;
@@ -16,6 +15,21 @@
 
         animation: rolling 2s linear infinite;
     }
+
+    .bg-gradient-animate{
+        background: linear-gradient(
+            45deg, var(--snitap-sky-light), var(--snitap-joy-light));
+            background-size: 400%;
+            background-position: 0 50%;
+
+            animation: bg-gradient 20s ease infinite;
+    }   
+}
+
+@keyframes bg-gradient{
+    50%{
+        background-position: 100% 50%;
+    }
 }
 
 @keyframes rolling{
@@ -23,5 +37,3 @@
         transform: translateX(-132px);
     }
 }
-
-/* 5 47 */
