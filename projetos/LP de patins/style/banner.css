@@ -1,0 +1,27 @@
+.banner{
+    width: 100%;
+    padding-block: 2.5rem;
+    overflow: hidden;
+
+    .scroller{
+        border: solid;
+        width: 100%;
+        overflow: hidden;
+        padding-block: 1rem;
+    }
+
+    .rolling{
+        display: flex;
+        gap: 1.5rem;
+
+        animation: rolling 2s linear infinite;
+    }
+}
+
+@keyframes rolling{
+    to{
+        transform: translateX(-132px);
+    }
+}
+
+/* 5 47 */
