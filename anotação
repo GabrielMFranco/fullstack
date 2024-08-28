@@ -376,5 +376,84 @@ animation-range:
   Aplica diversas transformações visuais a um elemento, como rotação, translação e dimensionamento.
   transition-duration: 0.5s;
 
+------------------------------------------------------------------------
+                                 JS
+
+- Variavel => espaço reservado na momória ram para armazenar algo        temporariamente.
+
+ case-sensetive => letra maiusca ou minusca faz diferença.
+
+ var => variavel global que o valor pode ser alterado 
+ let =>  variavel de bloco com valores alteraveis 
+ const => variavel de bloco com valor fixo
+
+- Escopo => limite até onde uma variavel vai estar disponivel.
+  Define o contexto no qual uma variavel pode ser referenciada e alterada.
+
+- Hoisting => 
+   * Podemos criar uma variavel antes de ser declarada.
+   * Toda função ou variavel global pode ser utilizada por todo o codigo independende da ordem que foi declarada.
+
+- string => textos:
+   * " ou ' para escrever textos.
+   * ` usado para escrever multiplas linhas ou referenciar variaveis dentro do texto.
+
+   concatenar textos:
+   let message = "ola" + userName + ". Seja bem vindo"
+
+   Templates literals:
+   console.log(`olá, ${userName}. Seja bem vindo`)
+
+- number => numeros
+   incremento:
+   number++ => number = number + 1
+   number += 10  => number = number + 10
+
+   descremento:
+   number-- => number = number - 1
+   number -= 10  => number = number - 10
+
+- boolean => verdadeiro / falso
+
+- Conversão de tipos => feito de forma conciente
+   let value = "9"  => ta em forma de texto.
+   console.log(Number("9"))  => converteu para número
+
+   let age = 18  => ta em forma de número
+   console.log(age.toString())  => converteu para texto
+   console.log(String(age))  => segunda versão de conversão 
+
+- Coerção de tipos => o js tenta converter automaticamente antes de realizar uma operação.
+
+- Atibuitos
+   = => atribuição                        > => maior que 
+   == => comparação                       < => menor que
+   === => comparação a conteudo e tipo    <= => menor ou igual
+   !== => diferente                       =>  => maior ou igual
+
+- Operadores logicos:
+   && => and (e)
+   || => or (ou)
+   !... => not (inverte o valor na apresentação)  
+
+- Operador condicional ternário:
+   let age = 18
+   console.log(age >= 18 ? "você pode dirigir":"você não pode dirigir.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
