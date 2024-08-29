@@ -440,6 +440,63 @@ animation-range:
    let age = 18
    console.log(age >= 18 ? "você pode dirigir":"você não pode dirigir.")
 
+- Switch
+   switch(conteudo pra analisar){
+      case 1: => valor pra analisar
+         console.log("...")
+         break  => se executar o comando, ele pula o switch
+      case 2:
+         console. log("...")
+         break
+      default:  => quando não se encaixa nas sugeridas
+         console.log("Essa opção não existe")
+         break
+   }
+
+- Tratamento de Exceções:
+   try => todo comando que vai tentar executar
+   cath => se não der certo, tratamento de erro
+   finally => se der certo
+
+   try{  => tenta executar algo
+      ...
+   }catch(error){  => captura o erro pra tratar
+      console.log("Não foi possivel executar seu pedido") => mostra o erro de forma mais amigavel pro usuario.
+   }finally{  => executa algo independente se deu certo ou não (opcional)
+      console.log("fim")
+   }
+
+- Função:
+   function nome(){  => (parametro/variavel => só vale na função) {escopo}
+   }
+    
+   function sun(a,b){
+      let result = a + b
+      console.log(result)  => mostra o resultado
+      return result  => retorna o resultado pra quem chamou a função
+   }
+
+   Comentario de Documentação:
+   /**  */
+
+   Arrow function:
+   const showMessage = function(){ }  =>Normal
+   const showMessage = () =>{ }    =>arrow
+
+   callback function:
+   Podemos passar uma função pra outra função e executar lá dentro
+
+- DOM => document object model => representaçao de dados dos objetos que compoem a estrutura e o conteudo do html
+
+                              DOCUMENT
+                                 |
+                     DEAD-------HTML------- BODY
+                       |                      |
+                     TITLE                   H1  P 
+
+                    
+
+
 
 
 
