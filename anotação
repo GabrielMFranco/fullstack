@@ -494,7 +494,39 @@ animation-range:
                        |                      |
                      TITLE                   H1  P 
 
-                    
+console.log(guest.textContent) => Retorna o conteudo visivel e oculto
+console.log(guest.innerText)   => Retorna somente o conteudo visivel
+console.log(guest.innerHTML) => Retorna o html como texto  
+
+input.classList.add("input-error") => adiciona a class
+input.classList.remove("input-error") => remove a class
+input.classList.toggle("input-error") => remove se tiver a classe e add se n tiver (usado em abas de app)
+
+- alterando o CSS pelo JS:
+   const button = document.querySelector("button")
+   button.style.backgroundColor = "red"
+
+- Adicionando novo elemento pelo JS:
+   .append => adiciona apos todos os filho
+   .prepend => adiciona antes do primeiro 
+   .appendChild => adiciona apenas um elemento
+
+
+      const guests = document.querySelector("ul") => seleciona o elemento
+
+      const newGuest = document.createElement("li") => cria elemento li nele
+      newGuest.classList.add("guest") => adiciona a class no elemento
+      const guestName = document.createElement("span") => cria o span
+
+      guestName.textContent = "Chili" => adiciona o texto no span
+
+      newGuest.append(guestName) => cria o elemento li
+      guests.append(newGuest) => coloca o span com texto no li
+
+
+
+
+
 
 
 
