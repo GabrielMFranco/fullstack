@@ -492,7 +492,7 @@ animation-range:
                                  |
                      DEAD-------HTML------- BODY
                        |                      |
-                     TITLE                   H1  P 
+                     TITLE                   H1  P ...
 
 console.log(guest.textContent) => Retorna o conteudo visivel e oculto
 console.log(guest.innerText)   => Retorna somente o conteudo visivel
@@ -523,6 +523,10 @@ input.classList.toggle("input-error") => remove se tiver a classe e add se n tiv
       newGuest.append(guestName) => cria o elemento li
       guests.append(newGuest) => coloca o span com texto no li
 
+
+   .setAttribute("input") => muda os atributos do elemento que for selecionado
+   .removeAttribute("id") => remove atributo
+   .window.addEventListener(...) => fica observando algum evento 
 
 
 

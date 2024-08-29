@@ -2,7 +2,7 @@
 // console.log(document)
 
 //obter o title da página.
-console.log(document.title)
+//console.log(document.title)
 /*
 // acessar um elemento pelo ID
  const guest = document.getElementById("guest-2")
@@ -43,17 +43,32 @@ guest.textContent = "Desmili"  //alterar o valor
 // const button = document.querySelector("button") //pegando o elemento
 // button.style.backgroundColor = "red"
 
-const guests = document.querySelector("ul")
+// const guests = document.querySelector("ul")
 
-const newGuest = document.createElement("li")
-newGuest.classList.add("guest")
-const guestName = document.createElement("span")
+// const newGuest = document.createElement("li")
+// newGuest.classList.add("guest")
+// const guestName = document.createElement("span")
 
-guestName.textContent = "Chili"
+// guestName.textContent = "Chili"
 
 
-newGuest.append(guestName) // adiciona apos o ultimo filho
-guests.append(newGuest)
+// newGuest.append(guestName) // adiciona apos o ultimo filho
+// guests.append(newGuest)
+
+
+//const input = document.querySelector("input")
+
+//input.setAttribute("disabled",true) //desabilitando o input
+//input.setAttribute("type", "number") // mudando atributo para numeros
+
+
+window.addEventListener("load", () => {
+    console.log("A página foi carregada!")
+})    
+addEventListener("click", (event) =>{
+    console.log(event)
+})
+
 
 
 
