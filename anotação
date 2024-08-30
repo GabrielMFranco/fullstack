@@ -527,10 +527,39 @@ input.classList.toggle("input-error") => remove se tiver a classe e add se n tiv
    .setAttribute("input") => muda os atributos do elemento que for selecionado
    .removeAttribute("id") => remove atributo
    .window.addEventListener(...) => fica observando algum evento 
+   
+   *Podemos simplificar o mode de observar eventos:
+   form.onsubmit = (event) =>{}; => vai observar o click do submit no form
+
+   .on... => observa o ultimo que foi criado, se tiver outro on... acima, vai ignorar o de  cima e pegar o ultimo
+   .addEventListener => pega todos
 
 
+   Eventos:
+   keydown => quando uma tecla é pressionada, captura tudo, CTRL,SHIFT...
+   input.addEventListener("keydow", (event)=>{
+      console.log(event.key) => key mostra apenas as teclas sem outras info
+   })
+   keypress => quando uma tecla tipo caractere é pressionada, letras,num..
+   input.addEventListener("keypress", (event)=>{
+      console.log(event.key)
+   })
+   change => quando conteudo muda
+   inout.oncharge = (()=>{
+      console.log("O input mudou!")
+   })
+
+- Compreendendo Expressoes:
+ / \D + / g
+ / => inicio e fim da expressão
+ \D => pega os caracteres que não sejam digitos
+ + => pega os caracteres seguidos e junta
+ g => global, texto todo
 
 
+- Depuração de codigo - Debug:
+   Processo de encontrar e corrigir erros
+   
 
 
 

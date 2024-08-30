@@ -62,16 +62,100 @@ guest.textContent = "Desmili"  //alterar o valor
 //input.setAttribute("type", "number") // mudando atributo para numeros
 
 
-window.addEventListener("load", () => {
-    console.log("A página foi carregada!")
-})    
-addEventListener("click", (event) =>{
+// window.addEventListener("load", () => {
+//     console.log("A página foi carregada!")
+// })    
+// addEventListener("click", (event) =>{
+//     console.log(event)
+// })
+
+// const ul = document.querySelector("ul")
+
+// ul.addEventListener("scroll", (event) =>{
+//     console.log(ul.scrollTop)
+
+//     if(ul.scrollTop >=156){
+//         // console.log("Fim da lista")
+
+//         ul.scrollTo({     // leva pro lugar mandado
+//             top:0,
+//             behavior:"smooth" // deixa mais suave a rolagem da volta
+           
+//         })
+//     }
+// })
+
+// const button = document.querySelector("button")
+// button.addEventListener("click", ()=>{
+//     console.log("clicou")
+// })
+
+// const form = document.querySelector("form")
+
+// form.onsubmit = (event) =>{
+//       event.preventDefault()  // previnir o carregamento da pag
+//       console.log("Você fez submit")
+// }
+
+/*
+const input = document.querySelector("input")
+
+// keydown
+input.addEventListener("keydown", (event)=>{
+    console.log(event.key) // o key mostra apenas as teclas clicadas
+})
+*/
+
+/*
+const input = document.querySelector("input")
+input.addEventListener("keypress", (event)=>{
     console.log(event)
 })
+*/
+/*
+const input = document.querySelector("input")
+input.onchange = (() =>{
+    console.log("o input mudou")
+})
+//outro modo:
+input.oncharge = () =>{
+    inputCharge()   //chama a função
+}
+function inputCharge(){
+    console.log("O input Mudou!")
+}
+*/
+
+/*
+const input = document.querySelector("input")
+
+input.addEventListener("input", () =>{
+//     console.log(input.value)  // recebe o valor do input
+const value = input.value
+const regex = /\D+/g
+//console.log(value.match(regex)) //match verifica => verifica o value com o match
+
+// const isValid = regex.test(value)  //testa se atende o padrão
+// console.log(isValid)
 
 
 
+})*/
 
 
+const input = document.querySelector("input")
+const form = document.querySelector("form")
 
+form.onsubmit = (event) => {
+    event.preventDefault()
 
+    const value= input.value
+    const hasNumberRegex = /\d+/g
+
+    if(hasNumberRegex.test(value)){
+        alert("O texto contém números. Digite novamente")
+    }else{
+        alert("Enviado")
+    }
+    console.log(value)
+}

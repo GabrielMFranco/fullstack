@@ -59,6 +59,8 @@ button{
 ul{ 
     list-style: none;  
     font-family: Arial, Helvetica, sans-serif;
+    height: 9rem;
+    overflow-y: scroll;
 
 
     & li{
