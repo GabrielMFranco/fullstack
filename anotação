@@ -573,6 +573,56 @@ Se a propriedade ou função chamada é nullish (null or undefined), a expressã
 - OPERADOR DE COALESCÊNCIA NULA (??)
 Operador lógico que retorna o seu operador do lado direito quando o seu do lado esquerdo é null ou undefined. Caso ontrário, ele retorna o seu operador do lado esquerdo.
 
+-  =>
+
+- Array =>
+   .push("item") => adiciona um item no final do array
+   .unshift("item") => adiciona um item no inicio do array
+   .shift() => remove o primeiro item do array
+   .pop() => remove o ultimo item do array
+
+   .indexOf("item do array") => retorna o indice do elemento
+   .splice(indice pra iniciar o delete, indice que termina o del)
+   .includes("item") => verifica se existe o item no array
+
+- Repetição => 
+   -while => repete até que a condição seja verdadeira
+   do while => repete ao menos uma vez
+   -for => repete até a condição seja falsa  
+          for(variavel de controle; condição; incremento ou descremento)
+   -for in => Executa iterações a partir de um objeto e percorre as propriedades
+   -for of => itera sobre valores de um objeto iteravel
+   -Break => encerra a repetição
+   -Coninue => pula a execução e continua o loop com as outras interações
+
+- Data e hora =>
+   get => pega o que é requerido => .getHours => pega as horas
+   set => altera o que é requerido => .setFullYear(1234)
+
+   -Para sempre ter 2 digitos no que é requerido: ex
+      month = (date.getMonth() +1).toString().padStart(2, "0")
+      console.log(month)
+   
+   .toLocaleString() => exibe formatado no formato local
+   .toLocaleDateString() => exibe a data no formato local
+   .toLocaleDateString("en") => exibe a data no formato escolhido
+
+- Timestamp => O número que representa uma data, valor que representa um ponto especifico no tempo
+   Data no js é baseada no valor de tempo em ms
+   Duas maneiras de interpretar data e hora:
+   -local - localidade atual
+   -UTC - TEMPO UNIVERSAL COORDENADO
+
+- Classes =>  São formas de criar objetos e definir comportamentos utilizando construtores e métodos
+   construtor => é chamado quando um objeto é instanciado
+   métodos => funções associadas a objetos e descrevem o comportamento desse objeto
+   herança => Uma classe pode herdar propriedades e métodps de outras classes, permitindo a reutilização de código. (extends)
+
+   métodos estaticos => são acessados sem instanciar a classe
+
+
+   
+
 
    
 
