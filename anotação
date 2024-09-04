@@ -559,6 +559,21 @@ input.classList.toggle("input-error") => remove se tiver a classe e add se n tiv
 
 - Depuração de codigo - Debug:
    Processo de encontrar e corrigir erros
+
+
+- OBJETOS: usado para fazer comparações concretas ou não concretas
+
+   propriedade => define as caracteristicas (textos ou numeros)
+   comportamento => métodos, oq ele executa (funçoes)
+
+- OPTIONAL CHAINING (?.) - Encadeamento opcional
+Se a propriedade ou função chamada é nullish (null or undefined), a expressão retorna undefined em vez de gerar um erro.
+Útil ao explorar o conteúdi de um objeto quando não existe garantia da existencia de determinadas propriedades obrigatórias
+
+- OPERADOR DE COALESCÊNCIA NULA (??)
+Operador lógico que retorna o seu operador do lado direito quando o seu do lado esquerdo é null ou undefined. Caso ontrário, ele retorna o seu operador do lado esquerdo.
+
+
    
 
 
