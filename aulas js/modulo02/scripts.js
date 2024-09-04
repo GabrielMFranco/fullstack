@@ -170,3 +170,83 @@ console.log(person2.name)
 person2.message()
 */
 //------------------------------------------------------------------
+// Método de texto
+/*
+let message = "Estou estudando os fundamentos de JS"
+
+// Exibir o texto em maiúsculo.
+console.log(message.toUpperCase())
+// Exibir o texto em minusculo.
+console.log(message.toLowerCase())
+
+// Exibir o comprimento de uma string, incluindo espaços
+console.log(message.length)
+// Exemplo
+let password = "12345"
+if(password.length < 6){
+    console.log("A senha deve ter ao menos 6 caracteres")
+}
+
+// Quantos digitos tem um número
+let value = 12345
+console.log(String(value).length)
+console.log(value.toString().length)  //outro método
+
+// Substituir parte de um texto
+console.log(message.replace("JS","Javascript"))
+// Extraindo uma parte da string (start, end)
+console.log(message.slice(6, 30))
+// Extraindo de tras para frente.
+console.log(message.slice(-17))
+
+// Removendo espaços do inicio e do final do texto
+let textWithSpace = "          Texto de exemplo         "
+console.log(textWithSpace.length)
+console.log(textWithSpace)
+
+console.log(textWithSpace.trim().length)
+console.log(textWithSpace.trim())
+*/
+
+//------------------------------------------------------------------
+/*
+const creditCard = "1111222233331234"
+console.log(creditCard.length)
+// Pegar os 4 ultimos digitos
+const lastDigits = creditCard.slice(-4)
+console.log(lastDigits)
+// O padStart prenche a string do inicio
+const maskedNumer = lastDigits.padStart(creditCard.length, "X")
+console.log(maskedNumer)
+// O padEnd preenche a string do final
+const number= "123"
+console.log(number.padEnd(10, "#"))
+*/
+//------------------------------------------------------------------
+/*
+let text = "Estudar, Aprender, Praticar"
+// Separar a string
+let separate = text.split(",")
+console.log(separate)
+
+let message = "Estou aprendendo Javascript"
+console.log(message.split(" "))
+
+// Unir a string
+let joined = separate.join(" - ")
+console.log(joined)
+*/
+//------------------------------------------------------------------
+/*
+let message = "Estou estudando os fundamentos de Javascript"
+// Obtem a posição da palavra
+console.log(message.indexOf("estudando"))
+// Quando não encontra retorna -1
+
+// Verificar se existe a palavra ou frase na String.
+console.log(message.toLowerCase().includes("javascript"))
+// podemos combinar com lower ou upperCase pra não ocorrer erros 
+*/
+
+//------------------------------------------------------------------
+// Array
