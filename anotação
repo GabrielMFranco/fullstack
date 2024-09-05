@@ -614,11 +614,12 @@ Operador lógico que retorna o seu operador do lado direito quando o seu do lado
    -UTC - TEMPO UNIVERSAL COORDENADO
 
 - Classes =>  São formas de criar objetos e definir comportamentos utilizando construtores e métodos
-   construtor => é chamado quando um objeto é instanciado
-   métodos => funções associadas a objetos e descrevem o comportamento desse objeto
-   herança => Uma classe pode herdar propriedades e métodps de outras classes, permitindo a reutilização de código. (extends)
-
+   Construtor => é chamado quando um objeto é instanciado
+   Métodos => funções associadas a objetos e descrevem o comportamento desse objeto
+   Herança => Uma classe pode herdar propriedades e métodps de outras classes, permitindo a reutilização de código. (extends)
    métodos estaticos => são acessados sem instanciar a classe
+   Prototype => uma propriedade que referencia outra dentro de um objeto
+
 
 
    

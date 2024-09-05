@@ -725,12 +725,100 @@ class User{
 User.showMessage("Essa é uma mensagem")
 */
 //------------------------------------------------------------------
-// Aplicar herança com classe
-
+/*
+// Aplicar herança com classe 
+// Sobreencrevendo metodos
 class Animal {
     constructor(name){
         this.name = name
     }
 
-    
+    makeNoise(){
+        console.log("Algum som genérico do animal")
+    }
 }
+
+class Dog extends Animal{
+    // Herdou o conteudo da class Animal
+    makeNoise(){
+        console.log("wooof! woof! woof! ???")
+    }
+}
+const dog = new Dog("Flash")
+console.log(dog.name)
+dog.makeNoise()
+
+
+class Cat extends Animal{
+    makeNoise(){
+        console.log("Mialeee...mialeeee")
+    }
+}
+const cat = new Cat("house")
+console.log(cat.name)
+cat.makeNoise()
+*/
+//------------------------------------------------------------------,
+/*
+//Classes x Prototype
+
+const address = {
+    city: "São mateus do Sul",
+    country: "Brazil"
+}
+
+console.log(address)
+
+
+const users = ["Obli", "Thai", "Chili"]
+console.log(users)
+
+const userName = "Obliterate"
+console.log(userName.__proto__)
+*/
+//------------------------------------------------------------------
+/*
+let obj = []
+
+let index = 300
+
+try {
+    //obj.execute()
+
+    if(!obj.includes(17)){
+        throw new Error("O número 17 não está disponível.")
+    }
+
+    if(index > 99){
+        throw new RangeError("Número está fora do intervalo. Escolha um número de 0 a 99")
+    }
+
+} catch (error) {
+    if(error instanceof TypeError){
+        console.log("Método indisponível.")
+    }else if (error instanceof RangeError){
+        console.log("Método indisponível")
+    }else{
+        console.log("Não foi possivel realizar a ação")
+    }
+}
+*/
+//------------------------------------------------------------------
+/*
+// Classes para criar erros customizados
+class MyCustomError{
+    constructor(message){
+        this.message = "classe de erro customizada:" + message
+    }
+}
+
+try {
+    throw new MyCustomError("Erro personalizado lançado")
+} catch (error) {
+    if(error instanceof MyCustomError){
+        console.log(error.message)
+    }else{
+        console.log("Não foi possivel executar")
+    }
+}
+*/
