@@ -1,0 +1,42 @@
+.content{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    & #toggle{
+        position: relative;
+
+        width: 60px;
+        height: 20px;
+        border: 1px solid green; 
+        border-radius: 60px;
+        transition:  background-color 5s ease;
+        overflow: hidden;
+
+        & input{
+            position: absolute;
+            display: none;
+            
+        }
+
+        & label{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        & .teste{
+            width: 100%;
+            height: 100%;
+            transition:  background-color 1s ease;
+            
+        }
+        
+        
+    }    
+    #togglecolor:checked ~ .teste{
+        background-color: aquamarine;  
+    
+    }
+    #togglecolor:checked ~ .escuro{
+        color: red;
+    }
+}
