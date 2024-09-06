@@ -620,28 +620,14 @@ Operador lógico que retorna o seu operador do lado direito quando o seu do lado
    métodos estaticos => são acessados sem instanciar a classe
    Prototype => uma propriedade que referencia outra dentro de um objeto
 
+- ECMAScript => Sempre que tem novas att dos recursos JS, ela é lançada pelo ECMAScript(ES)
 
+- use strict => acusa qualquer inconformidade com o código, evitando problemas futuros, para ativar colocar "use strict" no código para pegar o código completo, ou dentro de uma função para delimitar a area de atuação.
 
-   
+- Destructuring assignment (desestrutração) permite extrair dados de arrays ou objetos em variaveis distintas.
+   -Para ignorar o primeiro item no array usar o [, item], a virgula mostra a quantidade de item na frente e em seguida qual vc quer pegar.  
 
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Rest params(...) => permite representar um número indefinido de argumento como um array
+   -usando o ...nome no lugar dos parametros, ele pega todo o conteudo e monstra separadamente mesmo sem definir parametro pro conteudo
 
 
