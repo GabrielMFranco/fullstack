@@ -87,3 +87,24 @@ values(2, 1, 3, 4)
 //---------------------------------------------------------------
 
 // spread (espalhar) permite que um objeto iterável, como uma expressão de array ou uma string seja expandido para ser usado onde zero ou mais argumentos.
+
+const numbers = [1, 2, 3]
+console.log(numbers)
+
+// Spread
+console.log(...numbers)
+
+const data = [
+    {
+        name:"Obli",
+        email:"obli@email.com",
+        avatar:"o.png",
+    },
+    {
+        name:"Thai",
+        email:"thai@email.com",
+        avatar:"t.png",
+    },
+]
+console.log(data)
+console.log(...data)
