@@ -85,8 +85,8 @@ function values(...rest){
 values(2, 1, 3, 4)
 */
 //---------------------------------------------------------------
-
-// spread (espalhar) permite que um objeto iterável, como uma expressão de array ou uma string seja expandido para ser usado onde zero ou mais argumentos.
+/*
+// spread (espalhar) => permite que um objeto iterável, como uma expressão de array ou uma string seja expandido para ser usado onde zero ou mais argumentos.
 
 const numbers = [1, 2, 3]
 console.log(numbers)
@@ -107,4 +107,60 @@ const data = [
     },
 ]
 console.log(data)
+
+// Utilizando o spread no array com objetos
 console.log(...data)
+*/
+//---------------------------------------------------------------
+//---------------------------------------------------------------
+
+//            METODOS DE ARRAY
+/*
+//Método map() => chama a função callback recebida por parâmetro para cada elemento do array originla em ordem e constrói um novo array com base nos retornos de cada chamada. E no final, devolve o novo array
+
+const products = ['Teclado', "Mouse", "Monitos"]
+
+// Percorre os itens do Array  (quando vai fazer alguma lógica)
+products.map((item) => {
+ console.log(item)
+})
+
+// Sintaxa reduzida.  (apenas fazer retorno)
+products.map((product) => console.log(product))
+
+// Utilizando o novo objeto retornado
+const formatted = products.map((product) => {
+    // return product.toUpperCase()
+
+    return{
+        id: Math.random(),
+        description: product,
+    }
+})
+
+console.log(formatted)
+*/
+//---------------------------------------------------------------
+/*
+// Método filter() => cria um novo array com todos os elementos que passaram na condição.
+
+const words = ["Javascript","HTML", "CSS", "Web"]
+
+// Filtrando palavras que trnahm mais de 3 letras.
+const result = words.filter((word) => word.length > 3)
+console.log(result)
+
+const products = [
+    { description: "Teclado", price: 150, promotion: true},
+    { description: "Mouse", price: 70, promotion: false},
+    { description: "Monitor", price: 900, promotion: true},
+]
+
+// Exemplo de um filtro de produtos na promoção.
+const promotion = products.filter((product) => product.promotion === true)
+
+console.log(promotion)
+*/
+//---------------------------------------------------------------
+
+// Método findIndex() => retorna o indice no array do primeiro elemento que satisfazer a condição. Caso contrário, retorna -1, indicando que nenhum elemento passou no teste.
