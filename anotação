@@ -640,3 +640,95 @@ Operador lógico que retorna o seu operador do lado direito quando o seu do lado
 - Método filter() => cria um novo array com todos os elementos que passaram na condição.
 
 - Método findIndex() => retorna o indice no array do primeiro elemento que satisfazer a condição. Caso contrário, retorna -1, indicando que nenhum elemento passou no teste.
+
+- Método find() => retorna o valor do primeiro elemento do array que satisfizer a condição. Caso contrario, retorna undefined.
+
+- Método every() => testa se todos os elementos do array passam na condição e retorna um valor boolean.
+
+- Método some() => testa se ao menos um dos elementos no array passa na condição e retorna um valor true ou false
+
+- Método reduce() => Reduz o array a um único valor.
+   Parametros
+   - Array original (values)
+   - Acumulador (accumulator)
+   - Valor da iteração (currentValue)
+   - Valor inicial (0)
+   - Index (indes da iteração atual - opcional)
+
+   const sum = values.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue
+   },0)
+   console.log(sum)
+
+----------------------------------------------------------------------
+               IMUTABILIDADE
+Você não pode modificar seus valores ou propriedades, mas pode criar uma cópia modificada para manter o original inalterado. 
+
+   const address1 = {
+      street: "av.brasil",
+      number: 20,
+   }
+   const address2 = {...address1} ou| address2 = {...address1, number:30}
+   address2.number = 30             |
+
+- Shallow copy (cópia superficial) => não pega os itens aninhados.
+
+- Deep Copy (copia profunda) => 
+
+- Object.feeze() => impede modificações nos objetos razos: ex
+   Object.feeze(name)
+   - Deep Freeze(congelamento profundo) => congela todos os abjetos aninhados também
+----------------------------------------------------------------------
+               MÓDULOS
+ES Module => é um sistema de módulo js, Define um formato para organizar e estruturar o codigo em módulos, permitindo a modularização e reutilização do código.
+   Principais caracteristicas:
+    - Módulo => encapsulamento de código em módulos permitindo a separação de responsabilidade e reutilização do codigo
+    - Import => usado para incluir modulos
+    - export => isado para expor funcionalides de um módulo para outro.
+
+- Default export => é a função padrão fornecida pelo módulo
+
+- Named export => cada método é importado pelo seu proprio nome de exportação
+
+- Renomear importação => adicionar o "as" apos o nome da função e passar o novo nome uitilizado para chamar ela, isso evita possiveis problemas que podem ocorrer se ja tiver uma função com aquele nome importado dentro do codigo. ex:
+   import {sum as s}
+----------------------------------------------------------------------
+               FUNÇÕES ASSÍNCRONAS
+               
+      async function fetch(){
+         const response = await asyncFunction()
+         console.log(response)
+      }
+      fetch()
+
+- setTimeout() => executa uma função após um intervalo de tempo especifico
+
+- .then() => executa quando a operação ocorrer com sucesso
+- .cacth() => executa quando a operação não comprir os requisitor
+- .finally() => executa no final independente se deu certo ou não
+
+- Caracteristicas do JS:
+   single threaded => executa uma coisa por vez
+   no-blocking => não trava o contexto da execução
+   asynchronous => precisa utilizar paradigma assincrono para lidar com a excução das coisas
+   concurrent => as tarefas que executam assincronamente concorrem uma com as outras pelo processamento
+
+- Concorrencia e Event Loop => gerencia a execução do codigo assincrono e eventos em um único thread permitindo que o JS seja não bloqueante
+   -Call Stack => armazena as chamadas de funçoes em execução, tudo passa pela call stack.
+      Microtasks => tarefas de alta prioridade que são executadas antes das macjotasks(temporizadores e promises).
+      Macrotasks => tarefas de menor prioridade, como callbacks de eventos, setTimeout e setInterval.
+   -Web APIs => utilização de outros recursos
+   -Callback Queue => fila que armazena callbacks e eventos que aguarda, para serem processaos.
+   -Event loop =>reficica a pilha de call stack e callback, se houver um callback pe removido da fila e colocado na pilha de chamadas para execução.
+----------------------------------------------------------------------
+                  PACOTES
+- Pacotes (ou bibliotecas) => fornecem funcionalidade prontas que você pode reutilizar em seus próprios projeto. Isso economiza tempo e esforço, evitando a necessidade de reescrever funcionalidades.
+
+- Gerenciador de pacotes => facilita a instalação, atualização e o gerenciamento de bibliotecas e dependências de um projeto.
+
+- NPM => Node Package Manager - é um dos gerenciadores mais populares para JS
+
+- Dependencia de produção => dependencias(pacotes/bibliotecas) necessarias para a execução do projeto de um amginete de produção.
+
+- Dependencia de desenvolvimento => dependencias necessárias apenas durante o desenvolvimento, mas não são necessarias para a execução do aplicativo em produção.
+
