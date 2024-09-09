@@ -732,3 +732,19 @@ ES Module => é um sistema de módulo js, Define um formato para organizar e est
 
 - Dependencia de desenvolvimento => dependencias necessárias apenas durante o desenvolvimento, mas não são necessarias para a execução do aplicativo em produção.
 
+- Versionamento semântico: 9.1.3
+   Major - versão principal, almenta quando são feitas mudanças incompativeis
+   Minor - versão menor, almenta quando tem novas funcionalidades
+   Patch - versão de correção, almenta se for feito correção de bugs
+
+- Converções => O npm utiliza converções para gerenciar a resolução de dependências e garantir que as instalações subsequentes mantenham a compatibilidade com as versão utilizadas na aplicação.
+
+- ~ => permite atualizações automanticas para versões compativeis. Isso permite receber patches e correções de bugs.
+
+- ^ => indica que o npm pode instalar automaticamente a versão mais recente compativel, Permite receber patches, correção de bugs e pequenas alterações de versão, mas não grande alterações de versão.
+
+- @ => usado para instalar uma versão especifica.
+
+----------------------------------------------------------------------
+                  Working APIs
+
