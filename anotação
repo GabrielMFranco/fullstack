@@ -748,3 +748,40 @@ ES Module => é um sistema de módulo js, Define um formato para organizar e est
 ----------------------------------------------------------------------
                   Working APIs
 
+- API - Aplication Programming Interface => interface que disponibiliza um conjunto de funcionalidades para serem utilizadas. ex: cotação de moeda
+
+- Métodos HTTP:
+   GET - leitura
+   POST - Criação
+   PUT - atualização
+   PATCH - atualizar parcial
+   DELETE -
+
+- JSON - JavaScript Object Notation => leva dados da nossa aplicação para a API e vise e versa (comunicação entre servidores e clientes).
+- JSON SERVER - simula uma API
+   "server": "json-server nome.json --port=3333"
+
+- fetch => adiciona o link da api => ("http//local.../nome api")
+
+- .then() => aguarda a api e pega a resposta:
+      .then((response) => response.json())  (passa pro json)
+      .then((data) => console.log(data))   (exibe na tela o conteudo)
+
+----------------------------------------------------------------------
+                  Compiladores
+São essenciais para a evolução contunua da linguagem, deixando forcarmos no mais que tem de mais novo no js que ele se encarrega de converter.
+
+- Compilador => converte o código que foi escrito em uma versão, para uma outra versão, permitindo usar recursos mais recentes da linguagem mesmo em ambientes que não oferecem suporte.
+
+- Transpilação => compilação para versões anteriores:
+   Parse - Mapeaia os elementos do código js.
+   Transformer - Manipula os elemtentos js para gerar cod compatível.
+   Generator - Gera o código JS.
+
+
+
+
+
+
+
+
