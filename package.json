@@ -1,8 +1,18 @@
 {
   "scripts": {
-    "server": "json-server server.json --port=3333"
+    "server": "json-server server.json --port=3333",
+    "build": "webpack ./aulasjs/modulo03/Burdlers-webpack/src/js/index.js",
+    
+    "dev": "babel mainb.js --watch --out-dir ./dist"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.17"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   }
 }

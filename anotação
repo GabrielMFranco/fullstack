@@ -778,6 +778,32 @@ São essenciais para a evolução contunua da linguagem, deixando forcarmos no m
    Transformer - Manipula os elemtentos js para gerar cod compatível.
    Generator - Gera o código JS.
 
+- Babel:
+   "biuld":"babel main.js --watch --out-dir ./dist"
+
+   "biuld" => nome reduzido para chamar e executar no terminal
+   main.js => nome da pasta de js do código
+   --watch => atualiza sozinho com as alterações feitas no código js
+   --out-dir =>
+   ./dist => pasta do conteudo compilado
+
+   - encerrar o terminal => ctrl + c
+   
+   - targets => configurações especificas para versões do navegador.
+
+----------------------------------------------------------------------
+                  BUNDLERS
+Agrupa(empacota) diversos arquivos e suas dependencias em um ou mais pacotes com o objetivo de otimizar o carregamento de páginas web.
+
+- Mapeando um gráfico de dependência:
+   resolução de dependencias => qual arquivo depende de qual.
+   
+- Agrupamento => Depois de receber entradas e passar por suas dependencias durante a fase de Resolução de dependências, um burdler entrega ativos estáticos que o navegador pode processar com exito.
+   Packing => Durante esse porcesso o empacotador aproveitará a resolição de dependência para integrar nossos vários arquivos de cod e retornar um único pacote para o navegador carregar.
+
+- Webpack =>
+
+
 
 
 
