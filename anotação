@@ -803,6 +803,44 @@ Agrupa(empacota) diversos arquivos e suas dependencias em um ou mais pacotes com
 
 - Webpack =>
 
+----------------------------------------------------------------------
+               DICA PROJETO
+-instalar versão mais recente do json pra simular uma api e não precisar buscar externa
+- criar arquivo git_ignore e colocar nome da pasta node_molude, pq é pesada e não precisa ir pro git, pq pode ser gereda novamente com o comando "nmp i"
+- criar arquivo server.json e deixar com array vazio,  ele vai receber os dados do agendamento. Também podemos criar "name" : nome do arquivo, "description": "descrição do project", "author":"seu nome".
+- Adicionar webpack e colocar um script para poder rodar ele("biuld":"webpack")
+- definir as config do webpack criando arquivo "webpack.config.js", adicionar 'const path = require("path")' adicionar:
+      module.exports = {
+         target: "web",
+         mode: "development",
+
+         entry: path.resolve(__dirname,"src,"main.js),
+         output:{
+            filename: "main.js",
+            path: path.resolve(__dirname, "dist"),
+         }
+      }
+
+- adicionar o 'npm i webpack-dev-server@4.15.1 --save-dev' e acrescentar config no webpack.config.js:
+         devServer: static:{
+            static:{
+               derectory: path.join(__dirname, "dist")
+            },
+            port:3000,
+            open: true,
+            liveReaload: true,
+         }
+
+- adicionar o HTML com 'npm i html-webpack-plugin@5.6.0 --save-dev' e fazer as configs
+
+- adicionar o css
+
+-add assets
+
+-add o babel
+
+    
+
 
 
 
