@@ -839,13 +839,22 @@ Agrupa(empacota) diversos arquivos e suas dependencias em um ou mais pacotes com
 
 -add o babel
 
-    
+----------------------------------------------------------------------
+                     TypeScript
+            https://www.typescriptlang.org/
 
+- Adiciona tipagem ao JS
 
+-Vantegem:
+   Feedback mais rápido de erros
+   Antecipa erros que seriam visto em execução
+   Ajuda a manter o cod consistente
+   Ajuda no trabalho em times
+   Processo de refatoração mais fácil
+   Recurso de Autocomplete
+   Pode adotar gradualmente typescript em uma base de código
 
+- Tipos primitivos: string, number, boolean
 
-
-
-
-
-
+   
+  
