@@ -1102,3 +1102,11 @@ const icon: keyof Icon = "add"
 - Single Thread => Executa uma coisa de cada vez
 - Call Stack => cada função que precisa ser exeutada é colocada na pilha(Stack)
 - Event Loop => Monitora a call stack e a fila de eventos.
+
+- API => Application Programming Interface => Oferece funcionalidades sem a necessidade de saber como foram implementados
+
+- stream e chunks => a requisição que chega no servidor dividida em varios pedaços(chunks) em fluxo (stream) de dados, isso ocorre porque o corpo pode ser grande. 
+
+- Middleware => Executa qualquer código, faz mudanças nos objetos de solicitação e resposta, encerra o ciclo de soliditação-resposta
+
+- 
