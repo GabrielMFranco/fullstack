@@ -854,7 +854,251 @@ Agrupa(empacota) diversos arquivos e suas dependencias em um ou mais pacotes com
    Recurso de Autocomplete
    Pode adotar gradualmente typescript em uma base de código
 
-- Tipos primitivos: string, number, boolean
+- Tipos primitivos: string, number, boolean, any(aceita qualquer valor).
 
-   
-  
+- Tipagem explicida => Deixa claro qual é a tipagem.
+
+- Inferência de Tipos => Tipo igual o primeiro valor.
+
+- Tipagem em array:
+      const exe = string[] = [...,...,]
+
+- Tipagem em função:
+      function sum( x:number, y:number)
+
+- Tipagem em objeto:
+      let user: {name:string, age:number, avatarUrl?: string} = {name:..., age:..}
+
+- União de tipo => | => ex: string | null
+
+----------------------------------------------------------------------
+               Tipos Customizados:
+
+interface Product{
+   id: number,
+   name: string
+}
+
+function newProduct (produto: Product){ }
+
+----------------------------------------------------------------------
+
+interface Person{
+   id:number,
+   name:string,
+}
+
+interface Teacher extends Person{
+   subjectss: string[]
+}
+
+interface Student extends Person{
+   agr: number
+}
+
+let teacher: Teacher = {id: 1, name:"Obli", subjects: ["js", "c#"]}
+
+----------------------------------------------------------------------
+
+type Product = {
+   id: number,
+   name: string
+}
+
+function newProduct(product: Product){}
+
+newProduct({id:1, name: "Produto x"})
+
+type selectResponse = Product[] | null
+
+function selectProducts(): selectResponse{
+   return null
+}
+
+----------------------------------------------------------------------
+- Unindo tipos
+
+type Person = {
+   id: number,
+   name:string
+}
+
+type Teacher = Person & {
+   subjects: string[]
+}
+
+type Student = Person & {
+   age:number
+}
+
+----------------------------------------------------------------------
+-  Interface x Type
+
+   Interface
+interface IBaseProduct{
+   price:number
+}
+
+interface IProduct extends IBaseProduct{
+   id:number,
+   name:string
+}
+1 - Podemos sobreescrever adicionando interfaces com o mesmo nome para juntar elas.
+2 - Não podemos
+
+   Type
+type TBaseProduct = {
+   price:number
+}
+
+type TProduct = TBaseProduct & {
+   iid:number,
+   name:string
+}
+1 - Não podemos sobreescrever
+2 - Podemos criar tipos personalinados usando tipos primitivos
+
+let product1: IProduct = {id: 1, name:"Produto 1"}
+let product2: TProduct = {id: 2, name:"Produto 2"}
+
+----------------------------------------------------------------------
+- Asserção de tipos
+
+type UserResponse = {
+   id: number;
+   name: string;
+   avatar: string;
+}
+let userResponse = {} as UserResponse;
+
+----------------------------------------------------------------------
+- Restringindo valores:
+
+type Size = "small" | "medium" | "large"
+
+let size: Size
+
+size = "small"
+
+----------------------------------------------------------------------
+- enum para numerar constantes
+
+enum Profile {
+   Admin = 1,
+   Cliente = 2,
+   Seller = 3
+}
+
+let profile: number = Profile.Admin
+
+----------------------------------------------------------------------
+- Gerenic => deixar a tipagem flexivel , aplicando o primeiro valor definido
+
+function useState<T extends number | string = string>(){
+   let state:T
+
+   function get(){
+      return state;
+   }
+
+   function set(newValue: T){
+      state = NewValue;
+   }
+   return (get, set);
+}
+
+let newState = useState<string>()
+newState.get()
+newState.set("obli")
+
+----------------------------------------------------------------------
+               Utilitarios do TypeScript
+- Partial => deixa os campos opicionais para poder fazer alguma alteração em apenas um valor, nem informar os outros novamente
+
+interface user{
+   id: number,
+   name: string,
+   email: string,
+}
+
+const newUser: User = {id:1, name: "Obli",email: "obli@email.com"}
+
+const updateUser: Partial<User> = { name: "Obliterate"}
+
+
+- Pick => escolher qual propriedade vamos reaproveitar
+
+interface Book{
+   title: string
+   pages: number
+   author: string
+}
+
+const book: Pick<Book, "title" | "pages"> = {title: "Typescript", pages: 150}
+
+
+- Omit => deixa a propriedade de fora
+
+interface Book{
+   title: string
+   pages: number
+   author: string
+   description: string
+}
+
+const book: Omit<Book, "description"> = { title: "Typescript", pages:100, author:"jeso"}
+
+
+- Record => faz o mapeamento de um tipo de obj pra outro
+
+const score: Record<string, number> = {
+   "Obli": 10,
+   "Jeso": 3
+}
+
+type Profile = "admin" | "user" | "guest"
+
+const user: Record<Profile, number> = {
+   "admin":1,
+   "guest":2,
+   "user":3
+}
+
+Objetos personalizados
+interface User{
+   name:string,
+   email:string
+}
+const users: Record<number, User> ={
+   1: {name:"Obli", email: "Obli@email.com"},
+   2: {name...............}
+}
+
+
+- Tipeof = define uma tipagem a partir de algo
+interace Product{
+   id: number
+   name: string
+}
+
+const product1: Product = {id:1, name: "produto 1"}
+const produto2: typeof produto1 = {id:2, name: "Produto 2}
+
+
+- Keyof => extrai a chave da tipagem
+
+const icons = {
+   "home: "./path/home.svg"
+   "add: "./path/add.svg"
+   "remove: "./path/remove.svg"
+}
+
+type Icon = typeof icons
+
+const icon: keyof Icon = "add"
+
+----------------------------------------------------------------------
+                        NODE JS
+- Single Thread => Executa uma coisa de cada vez
+- Call Stack => cada função que precisa ser exeutada é colocada na pilha(Stack)
+- Event Loop => Monitora a call stack e a fila de eventos.
